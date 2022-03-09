@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- style.css Link -->
+    <link rel="stylesheet" href="./CSS/style.css">
+    <!-- Font Awesome CDN Link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <title>Coding anything!</title>
+</head>
+
+<body>
+    <div class="logo">
+        <h1>Happy</h1>
+        <h1>Valentine Day</h1>
+    </div>
+    <div class="wrapper">
+        <div class="loading">
+            <div class="tuto">
+                <h2><i class="fas fa-quote-left"></i><span>Di chuột vào ảnh.</span><i class="fas fa-quote-right"></i></h2>
+            </div>
+            <div class="progress">
+                <div class="progress-done" data-done="70">
+                </div>
+            </div>
+        </div>
+        <div class="form">
+            <h4 class="tracking-in-expand">Nhập password của couple</h4>
+            <input type="text" placeholder="Enter password (Ex: lienyeuvu)" spellcheck="false">
+            <div class="form-image">
+                <div id="scene">
+                    <img src="./images/Cloud.png" data-depth="0.5">
+                    <img src="./images/Boy.png" data-depth="0.8">
+                    <img src="./images/Girl.png" data-depth="1">
+                </div>
+            </div>
+            <div class="send-password">
+                <ion-icon name="paper-plane-outline"></ion-icon>
+            </div>
+
+        </div>
+    </div>
+    <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+    </ul>
+    <!-- Font Ionic CDN Link  -->
+    <!-- Link: https://ionic.io/ionicons -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js "></script>
+    <script>
+        var scene = document.getElementById('scene');
+        var parallaxInstance = new Parallax(scene);
+    </script>
+    <script src="./JS/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".form"), {
+            max: 15,
+            speed: 300
+        });
+    </script>
+    <script src="./JS/script.js"></script>
+</body>
+
+</html>
